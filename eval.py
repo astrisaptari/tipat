@@ -2,14 +2,14 @@ from ultralytics import YOLO
 
 if __name__ == '__main__':
     # 1. Muat model terbaik yang ingin dievaluasi
-    model = YOLO('runs/detect/yolov8_ketupat_optimal/weights/best.pt')
+    model = YOLO('runs/detect/yolov8_ketupat_v6i/weights/best.pt')
 
     # 2. Jalankan proses validasi/evaluasi
     metrics = model.val(
-        data='Ketupat.v2i.yolov8/data.yaml',
-        imgsz=800,
+        data='Ketupat.v6i.yolov8/data.yaml',
+        imgsz=640,
         batch=8,
-        split='val'  # Bisa diganti 'test' jika ingin menguji dataset test
+        split='test'  # Bisa diganti 'test' jika ingin menguji dataset test
     )
 
     # 3. Tampilkan metrik utama di terminal

@@ -23,10 +23,8 @@ st.markdown("Aplikasi Pengolahan Citra Digital berbasis **Deep Learning (YOLOv8)
 @st.cache_resource
 def load_yolo_model():
     possible_paths = [
-        "runs/detect/yolov8_ketupat_optimal/weights/best.pt",  # Model lama yang aktif
-        "runs/detect/yolov8_ketupat_v3-2/weights/best.pt",
-        "best.pt"
-    ]
+    "runs/detect/yolov8_ketupat_v6i/weights/best.pt",      # Prioritas 1: Bobot v3i terbaru
+]
     
     for path in possible_paths:
         if os.path.exists(path):
