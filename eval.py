@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 if __name__ == '__main__':
     # 1. Muat model terbaik yang ingin dievaluasi
-    model = YOLO('runs/detect/yolov8_ketupat_v6i/weights/best.pt')
+    model = YOLO('runs/detect/yolov8_ketupat_v7i/weights/best.pt')
 
     # 2. Jalankan proses validasi/evaluasi
     metrics = model.val(

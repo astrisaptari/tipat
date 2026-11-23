@@ -1,13 +1,18 @@
 # Abaikan seluruh folder di dalam runs/detect/
 runs/detect/*/
 
-# Pengecualian: Tetap lacak folder val-3 beserta seluruh isinya
+# Pengecualian v6i (Eksperimen sebelumnya)
 !runs/detect/val-3/
 !runs/detect/val-3/**
-
-# Pengecualian: Tetap lacak folder yolov8_ketupat_v6i beserta seluruh isinya
 !runs/detect/yolov8_ketupat_v6i/
 !runs/detect/yolov8_ketupat_v6i/**
 
-# (Opsional) Abaikan file last.pt agar tidak memenuhi batas memori GitHub
+# Pengecualian v7i (Eksperimen terbaru)
+!runs/detect/val-4/
+!runs/detect/val-4/**
+!runs/detect/yolov8_ketupat_v7i/
+!runs/detect/yolov8_ketupat_v7i/**
+
+# Abaikan file last.pt agar tidak memenuhi batas memori GitHub
 runs/detect/yolov8_ketupat_v6i/weights/last.pt
+runs/detect/yolov8_ketupat_v7i/weights/last.pt
