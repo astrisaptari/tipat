@@ -7,11 +7,15 @@ runs/detect/*/
 !runs/detect/yolov8_ketupat_v6i/
 !runs/detect/yolov8_ketupat_v6i/**
 
-# Pengecualian v7i (Eksperimen terbaru)
+# Pengecualian v7i (Eksperimen terbaru - sesuaikan val-4 / val-5 dengan folder hasil eval terbaru)
 !runs/detect/val-4/
 !runs/detect/val-4/**
 !runs/detect/yolov8_ketupat_v7i/
 !runs/detect/yolov8_ketupat_v7i/**
+
+# Pastikan dataset v7i ikut terlacak
+!Ketupat.v7i.yolov8/
+!Ketupat.v7i.yolov8/**
 
 # Abaikan file last.pt agar tidak memenuhi batas memori GitHub
 runs/detect/yolov8_ketupat_v6i/weights/last.pt

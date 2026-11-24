@@ -6,10 +6,10 @@ if __name__ == '__main__':
 
     # 2. Jalankan proses validasi/evaluasi
     metrics = model.val(
-        data='Ketupat.v6i.yolov8/data.yaml',
+        data='Ketupat.v7i.yolov8/data.yaml',
         imgsz=640,
         batch=8,
-        split='test'  # Bisa diganti 'test' jika ingin menguji dataset test
+        split='test'
     )
 
     # 3. Tampilkan metrik utama di terminal
